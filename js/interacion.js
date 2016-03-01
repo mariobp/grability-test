@@ -59,7 +59,7 @@
 			 	if(m.validacionQ(x1,y1,z1,x2,y2,z2)){
 			 		console.log('entro q');
 			 		var num = m.query(x1,y1,z1,x2,y2,z2);
-			 		$("#resultado").text(num);
+			 		$("#resultados").append('<li class="mdl-list__item"><span class="mdl-list__item-primary-content">'+num+'</span></li>');
 					toas("Query Resultado:" + num);
 				}else{	
 					toas("X1, Y1, Z2 - X2, Y2, Z2 no pueden ser mayores que N");

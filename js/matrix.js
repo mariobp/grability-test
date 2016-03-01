@@ -70,14 +70,13 @@ Matrix.prototype.query = function(x1,y1,z1,x2,y2,z2){
 			for (var k = 0; k < this.getCellXY(i,j).length; k++) {
 				if (j>=y1-1 && j<=y2-1) {
 					if (k>=z1-1 && k<=z2-1) {
-						com+=this.getCellXYZ(i,j,k);
+						com+= parseInt(this.getCellXYZ(i,j,k));
 					}
 				}
 				
 			}
 		}
 	}
-	console.log(com);
 	return com;
 };
 
